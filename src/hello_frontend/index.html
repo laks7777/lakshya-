@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX | Revolutionizing Space Exploration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap/dist/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg" alt="SpaceX Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#missions">Missions</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>SpaceX</h1>
+            <p>Revolutionizing the future of space exploration.</p>
+            <a href="#about" class="btn">Explore Now</a>
+        </div>
+        <video autoplay muted loop class="background-video">
+            <source src="spacex-launch.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>
+                SpaceX designs, develops, and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology and enable humanity to become a multiplanetary species.
+            </p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Innovative Technology</h3>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Impact</h3>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-satellite"></i>
+                    <h3>Advanced Spacecraft</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Missions Section -->
+    <section id="missions" class="missions">
+        <h2>Our Missions</h2>
+        <div class="mission-cards">
+            <div class="card">
+                <h3>Falcon 9</h3>
+                <p>Reusable rockets for affordable space travel.</p>
+            </div>
+            <div class="card">
+                <h3>Starship</h3>
+                <p>The vehicle that will take us to Mars and beyond.</p>
+            </div>
+            <div class="card">
+                <h3>Starlink</h3>
+                <p>Providing global high-speed internet coverage.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="rocket1.jpg" alt="Rocket Launch">
+            <img src="earth.jpg" alt="Earth View">
+            <img src="mars.jpg" alt="Mars">
+            <img src="team.jpg" alt="SpaceX Team">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to work with us?</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 SpaceX. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // GSAP Animations
+        gsap.from(".hero-content h1", { duration: 1, y: -50, opacity: 0 });
+        gsap.from(".hero-content p", { duration: 1.5, y: 50, opacity: 0 });
+        gsap.from(".nav-links li", { duration: 1, x: -30, opacity: 0, stagger: 0.2 });
+        gsap.from(".about .features .feature", { duration: 1, scale: 0, stagger: 0.2 });
+    </script>
+</body>
+</html>
